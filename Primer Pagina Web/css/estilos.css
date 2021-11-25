@@ -1,0 +1,421 @@
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    box-sizing: border-box
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    letter-spacing: 1.5px;
+}
+
+.section__titulo {
+    text-align: center;
+    font-size: 40px;
+    color: #fba919;
+}
+
+.contenedor {
+    margin: auto;
+    width: 97%;
+}
+
+/*----------------------------------Estilos del header----------------------------------*/
+.header {
+    height: 60px;
+}
+
+.header .contenedor {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo,
+.icon-menu {
+    margin: 5px;
+    color: white;
+}
+
+.icon-menu {
+    display: block;
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    background: #fba919;
+    text-align: center;
+    line-height: 45px;
+    border-radius: 5px;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+/*-----------------------------------Estilos del menu-----------------------------------*/
+.nav {
+    position: absolute;
+    top: 60px;
+    left: -100%;
+    width: 100%;
+    transition: all 0.4s;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+}
+
+.menu__link {
+    display: block;
+    padding: 15px;
+    background: #fba919;
+    text-decoration: none;
+    color: #fff;
+
+}
+
+.menu__link:hover,
+.select {
+    background: white;
+    color: #fba919;
+}
+
+.mostrar {
+    left: 0;
+}
+
+/*--------------------------------Estilos del banner--------------------------------*/
+.banner {
+    margin-top: -60px;
+    position: relative;
+    z-index: -1000;
+    margin-bottom: 20px;
+
+}
+
+.banner .contenedor {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 100%;
+    color: #fff;
+    text-align: center;
+}
+.banner__img{
+    background-image: linear-gradient(to top, rgba(161, 140, 209, 0.4) 0%, rgba(251, 194, 235, 0.4) 100%),url(../img/evento.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.banner__txt {
+    display: none;
+}
+
+
+/*-------------------------------Estilos de info-------------------------------*/
+.info__columna {
+    background: #fba919;
+    color: white;
+    padding: 15px;
+    margin-bottom: 30px;
+
+}
+
+.info__titulo {
+    color: white;
+    display: block;
+}
+
+.info__img {
+    height: 50%;
+}
+
+.info__titulo {
+    font-size: 10;
+}
+
+.info__columna > img {
+    width: 100%;
+}
+
+/*-------------------------------Estilos de Cursos-------------------------------*/
+.cursos__columna {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.cursos__descripcion {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    width: 60%;
+    height: 100%;
+    font-size: 18px;
+    padding: 5px;
+}
+
+.columna__titulo {
+    font-size: 25px;
+    margin: 5px 0;
+}
+
+.cursos__txt {
+    font-size: 12px;
+    margin-top: -10px;
+}
+
+.cursos__img {
+    width: 100%;
+}
+
+/*------------------------------Estilo del formulario------------------------------*/
+.templatemo_contacttitle {
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 32px;
+    font-weight: bold;
+    color: #FBA919;
+    text-align: center;
+}
+
+.templatemo_sub_contacttitle {
+    width: 100%;
+    font-size: 22px;
+    color: #91bf24;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.templatemo_contact {
+    margin: 30px;
+    width: 100%;
+    margin-left: 15%;
+}
+
+.templatemo_contactform input,
+textarea {
+    width: 100%;
+    background: #282828;
+    border: 1px solid #393939;
+    padding: 7px 10px;
+    margin: 0px 0px 10px 0px;
+    background-color: #FFF;
+    border-radius: 10px;
+    left: -50%;
+}
+
+.templatemo_contactform textarea {
+    height: 100px;
+}
+
+
+.templatemo_contactform .btn-primary {
+    background: #92bf24;
+    border: none;
+    border-radius: 5px;
+    color: #3d5602;
+    font-weight: 800;
+
+}
+
+.templatemo_contactform .btn-primary:hover {
+    background: #a6d82c;
+}
+
+/*---------------------------------Estilos footer---------------------------------*/
+.footer {
+    background: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.footer .social [class^="icon-"] {
+    display: inline-block;
+    color: #333;
+    text-decoration: none;
+    font-size: 30px;
+    padding: 10px;
+    background: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    line-height: 40px;
+    margin-bottom: 0 10px;
+}
+
+/*-------------------------------Estilos resposive-------------------------------*/
+@media screen and(min-width:480px) {
+    .logo {
+        font-size: 40px;
+    }
+
+    .banner__titulo {
+        font-size: 30px;
+        margin: 5px 0;
+    }
+
+    .banner__txt {
+        display: block;
+        font-size: 18px;
+        margin: 7px 0;
+    }
+
+    .info,
+    .cursos {
+        display: flex;
+        justify-content: space-between;
+        margin-top: -90px;
+    }
+
+    .info__columna {
+        width: 32%
+    }
+
+    .info__titulo {
+        font-size: 30px;
+        margin: 5px 0;
+
+    }
+
+    .section__titulo {
+        width: 100%
+    }
+
+    .cursos {
+        flex-wrap: wrap;
+        margin-top: 0;
+    }
+
+    .cursos__columna {
+        width: 48%;
+    }
+
+    .footer .social [class^="icon-"] {
+        margin: 0 10px;
+    }
+}
+
+@media screen and(min-width:768px) {
+    .banner__titulo {
+        font-size: 50px;
+    }
+
+    .cursos__titulo {
+        font-size: 35px;
+    }
+
+
+}
+
+@media screen and(min-width:1024px) {
+    .contenedor {
+        width: 1000px;
+    }
+
+    .section__titulo {
+        font-size: 60px;
+        margin: 30px 0;
+    }
+
+    .nav {
+        position: static;
+        width: auto;
+    }
+
+    .menu {
+        display: flex;
+    }
+
+    .menu__link {
+        background: none;
+        font-size: 20px;
+    }
+
+    .select {
+        color: white;
+        background: #fba919;
+    }
+
+    .icon-menu {
+        display: none;
+    }
+
+    .banner__titulo {
+        font-size: 60px;
+    }
+
+    .info__titulo {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .info__columna {
+        padding: 30px;
+    }
+
+    .banner__txt {
+        font-size: 25px;
+    }
+
+    .cursos__descripcion {
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+
+    .cursos__titulo {
+        font-size: 50px;
+        margin: 0;
+    }
+
+    .cursos__txt {
+        font-size: 20px;
+    }
+
+}
+
+@media screen and(min-width:1280px) {
+    .banner .banner__img {
+        align-content: center;
+    }
+
+    .contenedor {
+        width: 1200px;
+    }
+
+    .logo {
+        font-size: 60px;
+    }
+
+    .banner .contenedor {
+        top: 50%;
+    }
+
+    .info {
+        margin-top: -200px;
+    }
+}
